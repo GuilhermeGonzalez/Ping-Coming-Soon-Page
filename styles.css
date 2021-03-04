@@ -1,0 +1,227 @@
+:root {
+    --blue: hsl(223, 87%, 63%);
+    --pale-blue: hsl(223, 100%, 88%);
+    --light-red: hsl(354, 100%, 66%);
+
+    --gray: hsl(0, 0%, 59%);
+    --very-dark-blue: hsl(209, 33%, 12%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 20px;
+    font-family: 'Libre Franklin', sans-serif;
+}
+
+body {
+}
+
+.container {
+    height: 100vh;
+    width: 100vw;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container #logo {
+    margin-top: 10vh;
+    margin-bottom: 5vh;
+}
+
+.container h1 {
+    color: var(--gray);
+    font-weight: 300;
+    font-size: 2rem;
+
+    margin-bottom: 2vh;
+}
+
+.container h1 strong {
+    color: var(--very-dark-blue);
+    font-size: 2rem;
+}
+
+.container h3 {
+    font-weight: 300;
+    margin-bottom: 5vh;
+}
+
+.email-container {
+    
+}
+
+.email-container input {
+    height: 55px;
+    width: 400px;
+    border-radius: 30px;
+    padding-left: 20px;
+    border-color: var(--gray);
+}
+
+.email-container input::placeholder{
+    font-size: 0.8rem;
+    font-weight: 600;
+    opacity: 0.2;
+}
+
+.email-container button {
+    background-color: var(--blue);
+    color: white;
+    border-radius: 30px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    border: none;
+    height: 55px;
+    width: 150px;
+    box-shadow: 0px 10px 10px -0px hsl(223, 87%, 63%, 0.3);
+}
+
+.email-container button:hover {
+    filter: brightness(1.2);
+    cursor: pointer;
+}
+
+#dashboard-image {
+    margin-top: 3vh;
+    width: 550px;
+    height: auto;
+}
+
+.social-container {
+    margin-top: 20px;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+    height: 5vh;
+    width: 200px;
+}
+
+.social-container .image-box{
+    border: var(--gray) 1px solid;
+    margin-left: 15px;
+    margin-right: 15px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 50px;
+}
+
+.social-container .image-box img 
+{
+    height: 30px;
+    width: 15px;
+    object-fit: contain;
+}
+
+.social-container .image-box:nth-child(2) img,
+.social-container .image-box:nth-child(3) img {
+    width: 20px;
+} 
+
+.social-container .image-box:hover {
+    background-color: var(--blue);
+    cursor: pointer;
+}
+
+.social-container .image-box:hover img 
+{
+    filter: brightness(5);
+}
+
+
+
+.container .copyright {
+    margin-top: 6vh;
+}
+
+p {
+    color:var(--gray);
+    font-size: .8rem; 
+}
+
+p a {
+    text-decoration: none;
+    font-size: .8rem;
+}
+
+/* ERROR EMAIL ================================================= */
+
+.container .error {
+    margin-bottom: 30px;
+    color: var(--light-red);
+    font-style: italic;
+    opacity: 0.8;
+
+    width: 500px;
+}
+
+.email-container .errorInput {
+    border-color: red;
+    
+}
+
+.container .unshow{
+    visibility: hidden;
+}
+
+
+
+@media (max-width: 575px) {
+    *{
+        font-size: 87.55%;
+    }
+
+    .email-container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .email-container input {
+        font-size: 1.2rem;
+    }
+
+    .email-container input::placeholder{
+        font-size: 1.2rem;
+    }
+
+    .email-container button {
+        width: 100%;
+        margin-top: 40px;
+        font-size: 1.2rem;
+    }
+
+    .error {
+        position: absolute;
+        margin-top: 350px;
+        margin-left: 150px;
+    }
+}
+
+@media (max-width: 375px)
+{
+    .email-container input
+    {
+        width: 80vw;
+    }
+
+    .error {
+        margin-left: 250px;
+    }
+
+    #dashboard-image {
+        width: 350px;
+    }
+
+    .container .copyright {
+        margin-top: 19vh;
+    }
+}
