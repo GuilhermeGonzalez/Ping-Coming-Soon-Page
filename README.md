@@ -6,10 +6,6 @@
 
 Thanks for checking out this front-end coding challenge.
 
-[Frontend Mentor](https://www.frontendmentor.io) challenges allow you to improve your skills in a real-life workflow.
-
-**To do this challenge, you need a basic understanding of HTML, CSS and JavaScript.**
-
 ## The challenge
 
 Your challenge is to build out this Coming Soon page and get it looking as close to the design as possible.
@@ -23,13 +19,16 @@ Your users should be able to:
 	- The `input` field is empty. The message for this error should say *"Whoops! It looks like you forgot to add your email"*
 	- The email address is not formatted correctly (i.e. a correct email address should have this structure: `name@host.tld`). The message for this error should say *"Please provide a valid email address"*
 
+## Languages :computer: 
 
+- **HTML** 
+- **CSS**
+- **Javascript**
 
 ## Sharing your solution
 
-
+Click [HERE](https://ping-coming-soon-page-plum.vercel.app) to see the solution.
 
 ## Giving feedback
 
-
-
+Feedback is always welcome, so if you have any to give on this challenge please email gcgonzalez99@hotmail.com
